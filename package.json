@@ -1,0 +1,45 @@
+{
+  "name": "valida-cpf-ai",
+  "version": "0.0.1",
+  "description": "Validação de CPF utilizando OpenAI",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "module": "dist/index.mjs",
+  "type": "module",
+  "keywords": [
+    "cpf",
+    "validacao",
+    "brasil",
+    "openai",
+    "ai",
+    "artificial-intelligence",
+    "cpf-validator"
+  ],
+  "author": "Kaue Elias <dev.kaue@icloud.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kauenzo/valida-cpf-ai.git"
+  },
+  "homepage": "https://github.com/kauenzo/valida-cpf-ai#readme",
+  "bugs": {
+    "url": "https://github.com/kauenzo/valida-cpf-ai/issues"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "bun run index.ts",
+    "prepublishOnly": "bun run build"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^25.0.10",
+    "tsup": "^8.5.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "openai": "^6.16.0"
+  }
+}
+
